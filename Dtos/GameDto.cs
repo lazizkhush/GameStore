@@ -4,6 +4,6 @@ public record class GameDto(
     int Id,
     string Name,
     string Genre,
-    DateOnly Year,
+    int Year,
     decimal Price
 );

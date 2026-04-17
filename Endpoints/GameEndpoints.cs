@@ -10,18 +10,21 @@ public static class GameEndpoints
         new(
             1,
             "Zombies",
+            "Adventure",
             2021,
             12.3m
         ),
         new(
             2,
             "Angry Birds",
+            "Fight",
             2009,
             18.97m
         ),
         new(
             3,
             "MK",
+            "Fight",
             1998,
             4.3m
         )
@@ -41,6 +44,7 @@ public static class GameEndpoints
             GameDto game = new (
                 games.Count + 1,
                 newGame.Name,
+                newGame.Genre,
                 newGame.Year,
                 newGame.Price
             );
@@ -57,6 +61,7 @@ public static class GameEndpoints
             games[index] = new(
                 id,
                 updatedGame.Name,
+                updatedGame.Genre,
                 updatedGame.Year,
                 updatedGame.Price
             );
